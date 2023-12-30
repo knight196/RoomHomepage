@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+nav img{
+    width: 3%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+ul li{
+    margin: 0 15px; 
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.hamburger{
+    display: none;
+}
+.mySlides{
+    display: none;
+}
+.sliderimg{
+    max-width: 100%;
+    position: relative;
+    top: -60px;
+    z-index: -1;
+}
+.sliderparagraph{
+    transform: translateY(-30%);
+}
+@media (max-width: 480px) {
+    .navbar{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    nav img{
+        width:100%;
+        height: 50%;
+        position: relative;
+        left: 200%;
+        top: 30%;
+    }
+    ul{
+        background-color: grey;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        top: 80px;
+        width: 80%;
+        left: 10%;
+        transform: translate(120%);
+    }
+    ul li{
+        margin: 10px;
+    }
+    .hamburger{
+        display: block;
+        padding: 10px;
+    }
+    nav ul.show{
+        transform: translate(0);
+    }
+    .buttons button{
+        position: relative;
+        left:50%;
+        top: -95px;
+        height:auto;
+        width: 20%;
+        padding:10px;
+        background-color: black;
+        color: white;
+        border:none;
+    }
+    .sliderimg{
+        height:50%;
+    }
+    .lastsection img{
+        max-width: 100%;
+    }
+    .lastparagraph h1{
+        font-size: 20px;
+    }
+}
+@media all and (min-width:480px){
+    nav ul{
+        right: 20%;
+        font-size: 20px;
+    }
+    .navbar img{
+        width: 100%;
+    }
+    .buttons button{
+        position: relative;
+        left:50%;
+        top: -95px;
+        height:auto;
+        width: 10%;
+        padding:10px;
+        background-color: black;
+        color: white;
+        border:none;
+    }
+    .lastsection img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1020px){
+    nav img{
+     width: 100%;
+  }
+  .sliderimg{
+      max-width: 50%;
+  }
+  .buttons button{
+    position: relative;
+    left:50%;
+    top: -105px;
+    height:auto;
+    width: 10%;
+    padding:10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border:none;
+}
+.slider{
+    position: relative;
+}
+.sliderparagraph{
+    padding:10%;
+    position: absolute;
+    top: 5%;
+    left:45%;
+    font-size: 100%;
+}
+.lastsection{
+    position: relative;
+    top: -105px;
+ display: flex;
+ text-align: center;
+}
+.lastsection img{
+    width: 100%;
+}
+.lastparagraph{
+    max-width: 35%;
+    margin:auto;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+}
